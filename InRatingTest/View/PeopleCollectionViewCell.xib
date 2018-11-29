@@ -13,41 +13,44 @@
         <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
         <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
         <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" id="gTV-IL-0wX" customClass="PeopleCollectionViewCell" customModule="InRatingTest" customModuleProvider="target">
-            <rect key="frame" x="0.0" y="0.0" width="147" height="140"/>
+            <rect key="frame" x="0.0" y="0.0" width="96" height="120"/>
             <autoresizingMask key="autoresizingMask"/>
             <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center">
-                <rect key="frame" x="0.0" y="0.0" width="147" height="140"/>
+                <rect key="frame" x="0.0" y="0.0" width="96" height="120"/>
                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                 <subviews>
-                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="Ie7-Fx-i4U">
-                        <rect key="frame" x="25.5" y="0.0" width="96" height="96"/>
-                        <constraints>
-                            <constraint firstAttribute="width" constant="96" id="RzQ-Q8-yQK"/>
-                            <constraint firstAttribute="height" constant="96" id="dil-VV-KSb"/>
-                        </constraints>
+                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="Ie7-Fx-i4U">
+                        <rect key="frame" x="0.0" y="0.0" width="96" height="99"/>
                         <userDefinedRuntimeAttributes>
                             <userDefinedRuntimeAttribute type="number" keyPath="layer.cornerRadius">
                                 <integer key="value" value="10"/>
                             </userDefinedRuntimeAttribute>
                         </userDefinedRuntimeAttributes>
                     </imageView>
-                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="8Tk-8c-5EK">
-                        <rect key="frame" x="56" y="102" width="35.5" height="16.5"/>
-                        <fontDescription key="fontDescription" name="Helvetica-Light" family="Helvetica" pointSize="14"/>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" minimumFontSize="7" adjustsLetterSpacingToFitWidth="YES" translatesAutoresizingMaskIntoConstraints="NO" id="8Tk-8c-5EK">
+                        <rect key="frame" x="0.0" y="105" width="96" height="15"/>
+                        <fontDescription key="fontDescription" name="Helvetica-Light" family="Helvetica" pointSize="13"/>
                         <nil key="textColor"/>
                         <nil key="highlightedColor"/>
                     </label>
                 </subviews>
             </view>
             <constraints>
+                <constraint firstItem="Ie7-Fx-i4U" firstAttribute="leading" secondItem="ZTg-uK-7eu" secondAttribute="leading" id="5LJ-gj-ZXM"/>
                 <constraint firstItem="Ie7-Fx-i4U" firstAttribute="top" secondItem="gTV-IL-0wX" secondAttribute="top" id="N0E-wR-PT3"/>
+                <constraint firstItem="8Tk-8c-5EK" firstAttribute="leading" secondItem="ZTg-uK-7eu" secondAttribute="leading" id="ext-bR-8zL"/>
+                <constraint firstItem="ZTg-uK-7eu" firstAttribute="trailing" secondItem="Ie7-Fx-i4U" secondAttribute="trailing" id="h2N-VI-0bh"/>
+                <constraint firstItem="ZTg-uK-7eu" firstAttribute="trailing" secondItem="8Tk-8c-5EK" secondAttribute="trailing" id="jY6-44-Zgh"/>
                 <constraint firstItem="8Tk-8c-5EK" firstAttribute="top" secondItem="Ie7-Fx-i4U" secondAttribute="bottom" constant="6" id="moI-tB-MFT"/>
-                <constraint firstItem="8Tk-8c-5EK" firstAttribute="centerX" secondItem="gTV-IL-0wX" secondAttribute="centerX" id="qRd-17-9FJ"/>
-                <constraint firstItem="Ie7-Fx-i4U" firstAttribute="centerX" secondItem="gTV-IL-0wX" secondAttribute="centerX" id="w3H-46-zdW"/>
+                <constraint firstItem="ZTg-uK-7eu" firstAttribute="bottom" secondItem="8Tk-8c-5EK" secondAttribute="bottom" id="u5k-JR-5ae"/>
             </constraints>
             <viewLayoutGuide key="safeArea" id="ZTg-uK-7eu"/>
-            <size key="customSize" width="147" height="140"/>
-            <point key="canvasLocation" x="215.19999999999999" y="194.30284857571215"/>
+            <size key="customSize" width="184" height="148"/>
+            <connections>
+                <outlet property="avatarImage" destination="Ie7-Fx-i4U" id="9pS-5O-Ryv"/>
+                <outlet property="nameLabel" destination="8Tk-8c-5EK" id="tKn-AO-tob"/>
+            </connections>
+            <point key="canvasLocation" x="259.19999999999999" y="185.30734632683661"/>
         </collectionViewCell>
     </objects>
 </document>

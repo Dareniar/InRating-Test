@@ -13,4 +13,5 @@ struct People {
     let name: String
     let avatar: String
     
+    static var peoples: [[People]] = [[], [], [], [], [], []]
 }
